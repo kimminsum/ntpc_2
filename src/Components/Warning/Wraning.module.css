@@ -1,0 +1,67 @@
+.background {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  backdrop-filter: blur(30px);
+}
+.errorFrame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 42px;
+    background: linear-gradient(
+      139.72deg,
+      rgba(255, 0, 0, 0.3),
+      rgba(255, 0, 0, 0)
+    );
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
+    transform: translateY(30px);
+    width: 545px;
+    height: 553px;
+    overflow: hidden;
+    mix-blend-mode: normal;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.closeButton {
+  position: relative;
+  margin-top: 34px;
+  margin-left: 450px;
+  width: 18px;
+  height: 18px;
+}
+.icWarning {
+    position: relative;
+    margin-top: 70px;
+  height: 132px;
+  width: 146px;
+}
+.title{
+    position: relative;
+    margin-top: 113px;
+  font-family: "pretendard-SemiBold";
+  color: white;
+  font-size: 30px;
+}
+.message {
+  position: relative;
+  margin-top: 12px;
+  font-family: "pretendard-Medium";
+  color: #868789;
+  font-size: 25px;
+}
+.body{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}

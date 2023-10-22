@@ -1,0 +1,17 @@
+  .input {
+    position: relative;
+    border-radius: 40px;
+    background: #d9d9d9;
+    width: 271px;
+    height: 42px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    text-indent: 16px;
+    color: #6B6B6B;
+    font-family: "Pretendard-Bold";
+  }
+
+  .input::placeholder {
+    position: absolute;
+  }

@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import styles from "./App.module.css";
+import Warning from "./Components/Warning/Warning";
+import Success from "./Components/Success/Success";
+import Card from "./Components/Card/Card";
+import UserContext from "./store/UserContext";
+import ErrorContext from "./store/ErrorContext";
+import React,{useState} from "react";
 function App() {
+
+   const [errorMessage, seterrorMessage] = useState(null)
+   const [success, setsuccess] = useState(false)
+   const [userDatas, setuserDatas] = useState({})
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider
+      value={{
+        userDatas: userDatas,
+        setuserDatas : setuserDatas
+      }}
+    >
+      <ErrorContext.Provider
+      value ={{
+        errorMessage : errorMessage,
+        seterrorMessage : seterrorMessage,
+        setsuccess : setsuccess,
+      }}
+      >
+        <div className={styles.App}>
+        {errorMessage != null && <Warning errorMessage={errorMessage}></Warning>}
+        {success && <Success></Success>}
+          <img
+            className={styles.background}
+            src="images/img-background.png"
+          ></img>
+          <Card></Card>
+        </div>
+      </ErrorContext.Provider>
+    </UserContext.Provider>
   );
 }
 

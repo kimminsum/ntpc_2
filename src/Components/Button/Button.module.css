@@ -1,0 +1,39 @@
+.icIcon,
+.text {
+  position: relative;
+}
+.icIcon {
+  width: 13px;
+  height: 13px;
+  object-fit: cover;
+}
+.text {
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+.textWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.placeholder {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.registerbutton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 169px;
+  height: 37px;
+  overflow: hidden;
+  flex-shrink: 0;
+}

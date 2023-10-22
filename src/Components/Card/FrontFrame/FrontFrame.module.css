@@ -1,0 +1,116 @@
+  .buttonFrame{
+    position: relative;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .ntpc {
+    position: relative;
+    font-weight: 600;
+    color: var(--color-white);
+  }
+  .midline {
+    position: relative;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 14px;
+  }
+  .inputParent {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+    color: var(--color-dimgray);
+  }
+  .title {
+    position: relative;
+    margin-top: 99px;
+    font-size: 41px;
+    background: linear-gradient(
+      90deg,
+      #2ebf91 7.12%,
+      #a8ff78 52.43%,
+      #8360c3 93.58%
+    );
+    font-family: 'Pretendard-Medium';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .loginFrame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 42px;
+    background: linear-gradient(
+      139.72deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
+    width: 461px;
+    height: 492px;
+    overflow: hidden;
+    mix-blend-mode: normal;
+  }
+  
+  .line1{
+    width: 166px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--color-red-200), var(--color-yellow-100));
+    border-radius: 10px;
+  }
+  
+  .line2{
+    width: 166px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--color-blue-100), var(--color-blue-300));
+    border-radius: 10px;
+  }
+
+  .theFront{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 42px;
+    background: linear-gradient(
+      139.72deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: normal;
+    backface-visibility: hidden;
+  }
+
+  .thePosition{
+    position: absolute;
+    width: 461px;
+    height: 492px;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .thePosition:hover{
+    transform: rotateY(180deg);
+  }
+
+  
