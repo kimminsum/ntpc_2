@@ -1,6 +1,7 @@
 import styles from "./InputField.module.css"
 import React,{forwardRef,useImperativeHandle,useState} from "react";
-const InputField = forwardRef((props,ref) =>{
+
+const InputField = forwardRef((props, ref) =>{
 
   const [inputValue, setinputValue] = useState("")
 
